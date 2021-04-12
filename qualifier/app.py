@@ -118,15 +118,17 @@ def save_qualifying_loans(qualifying_loans):
     save = questionary.confirm("Would you like to save?").ask()
     
     if save == True:
-        #print('writing file...')
         #csvpath = Path('qualifying_loans.csv')
             csvpath = questionary.text("Where would you like to save?").ask()
             save_csv(csvpath, qualifying_loans)
+            print('writing file...')
+
 
     if save == False:
         sys.exit(f"You chose note to save")
         
-
+    return save
+    
 def run():
     """The main function for running the script."""
 
