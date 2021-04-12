@@ -25,7 +25,6 @@ def save_csv(csvpath, qualifying_loans, header=None):
         if header:
             csvwriter.writerow(header)
         csvwriter.writerows(qualifying_loans)
-        print('writing file...')
 
 def load_csv(csvpath):
     """Reads the CSV file from path provided.
