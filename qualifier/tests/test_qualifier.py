@@ -37,4 +37,4 @@ def test_filters():
 def test_save_csv():
     # @TODO: Your code here!
     # Use Path from pathlib to output the test csv to ./data/output/qualifying_loans.csv
-    assert Path('/data/qualifying.csv').exists()
+    assert Path('./data/qualifying.csv').exists()
