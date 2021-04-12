@@ -6,3 +6,5 @@ from qualifier.utils.fileio import (
 def test_csv(cvspath, save_csv):
         print(f'the cvspath is{cvspath}')
         print(f'the filename is{save_csv}')
+
+test_csv()
